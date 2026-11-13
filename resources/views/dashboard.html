@@ -1656,15 +1656,13 @@
                         <span id="saham-list-badge" class="rounded-full border border-cyan-400/30 bg-cyan-400/10 px-3 py-1 text-[11px] font-semibold text-cyan-300">IDX</span>
                     </div>
                     <div class="scroll-thin max-h-[68vh] overflow-auto">
-                        <table class="w-full min-w-[52rem] text-left text-sm">
+                        <table class="w-full min-w-[38rem] text-left text-sm">
                             <thead class="border-b border-white/5 text-[11px] uppercase tracking-wider text-slate-500">
                                 <tr>
-                                    <th class="px-5 py-3 font-semibold">Aset</th>
-                                    <th class="px-5 py-3 font-semibold">Kode</th>
-                                    <th class="px-5 py-3 text-right font-semibold">Harga</th>
-                                    <th class="px-5 py-3 text-right font-semibold">24 jam</th>
-                                    <th class="px-5 py-3 text-right font-semibold">Sumber</th>
-                                    <th class="px-5 py-3 text-right font-semibold">Aksi</th>
+                                    <th class="w-[42%] px-5 py-3 font-semibold">Aset</th>
+                                    <th class="w-[22%] px-5 py-3 text-right font-semibold">Harga</th>
+                                    <th class="w-[16%] px-5 py-3 text-right font-semibold">24 jam</th>
+                                    <th class="w-[20%] px-5 py-3 text-right font-semibold">Aksi</th>
                                 </tr>
                             </thead>
                             <tbody id="saham-cat-tbody" class="divide-y divide-white/5"></tbody>
@@ -6975,10 +6973,8 @@
             '<div class="grid h-8 w-8 shrink-0 place-items-center rounded-lg bg-white/10 text-[11px] font-bold text-slate-300">' + row.name.charAt(0) + '</div>' +
             '<div class="min-w-0"><p class="truncate text-sm font-semibold text-white">' + row.name + '</p>' +
             '<p class="text-[11px] text-slate-500">' + row.desc + '</p></div></div></td>' +
-            '<td class="mono px-5 py-3 text-slate-400">' + row.code + '</td>' +
             '<td class="mono num px-5 py-3 text-right text-white">' + row.price + '</td>' +
             '<td class="px-5 py-3 text-right"><span class="' + (row.up ? 'text-emerald-400' : 'text-rose-400') + '">' + row.change + '</span></td>' +
-            '<td class="px-5 py-3 text-right text-[11px] uppercase tracking-wider text-slate-500">' + row.source + '</td>' +
             '<td class="px-5 py-3 text-right"><button type="button" class="whitespace-nowrap rounded-lg border border-cyan-400/30 bg-cyan-400/10 px-2.5 py-1 text-[10px] font-semibold text-cyan-300 transition hover:border-cyan-300/50 hover:text-cyan-200" onclick="event.stopPropagation();showCandlestick(\'' + row.asset + '\')">Pelajari Candlestick</button></td>' +
             '</tr>';
     }
